@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package contracts;
+
+option go_package = "github.com/codemodify/24hourtest/demo-workspace/contracts";
+
+service HelloWorldService {
+  rpc HelloWorld(HelloWorldRequest) returns (HelloWorldReply) {}
+}
+
+message HelloWorldRequest {}
+
+message HelloWorldReply { string helloWorldPayload = 1; }
