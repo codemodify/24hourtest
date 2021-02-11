@@ -38,3 +38,9 @@ go build
 - in VSCode terminal `cd server && go run main.go`
 - open client/main.go in VSCode editor, put a breakpoint in main function
 - hit Debug/F5
+
+# 5 - Testsfrom VSCode
+- VSCode -> open folder -> open "24hourtest" folder
+- in VSCode terminal `cd server && go run main.go`
+- open server/tests/connection_test.go in VSCode editor, put a breakpoint inside the test function
+- hit Debug Test
