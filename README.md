@@ -1,5 +1,5 @@
 # 24hourtest
-
+![(/screen.png?raw=true)
 
 # 1 - clone the repo
 ```bash
@@ -18,7 +18,7 @@ git clone https://github.com/codemodify/24hourtest.git
 ```bash
 cd $GOPATH/src/github.com/codemodify/24hourtest/demo-workspace
 sudo docker build -t nicolae24hourtest .
-sudo docker run nicolae24hourtest
+sudo docker run -p 64000:64000 nicolae24hourtest
 ```
 
 # 3 - consume GRPC service from Docker image
