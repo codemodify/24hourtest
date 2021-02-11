@@ -3,6 +3,7 @@
 
 # 1 - clone the repo
 ```bash
+# OPEN NEW TERMINAL FOR THIS
 export GO111MODULE=on
 export GOPATH="`cd ~/go;pwd`"
 export GOBIN=$GOPATH/bin
@@ -22,13 +23,13 @@ sudo docker run nicolae24hourtest
 
 # 3 - consume GRPC service from Docker image
 ```bash
+# OPEN NEW TERMINAL FOR THIS
 cd $GOPATH/src/github.com/codemodify/24hourtest/demo-workspace/client
 go build
 ./client
 
 # server will say "DEBUG: sending hello world"
 # client will say "DEBUG: got: hello world"
-
 ```
 
 
