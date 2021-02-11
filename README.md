@@ -1,5 +1,5 @@
 # 24hourtest
-![(/screen.png?raw=true)
+![](/screen.png?raw=true "")
 
 # 1 - clone the repo
 ```bash
