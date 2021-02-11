@@ -10,17 +10,15 @@ import (
 	"google.golang.org/grpc"
 )
 
-const helloWorldConstantMessage = "hello world"
-
 type helloWorldGrpcServer struct {
 	contracts.UnimplementedHelloWorldServiceServer
 }
 
 func (s *helloWorldGrpcServer) HelloWorld(ctx context.Context, in *contracts.HelloWorldRequest) (*contracts.HelloWorldReply, error) {
-	fmt.Println(fmt.Sprintf("DEBUG: sending %s", helloWorldConstantMessage))
+	fmt.Println(fmt.Sprintf("DEBUG: sending %s", contracts.HelloWorldConstantMessage))
 
 	return &contracts.HelloWorldReply{
-		HelloWorldPayload: helloWorldConstantMessage,
+		HelloWorldPayload: contracts.HelloWorldConstantMessage,
 	}, nil
 }
 
