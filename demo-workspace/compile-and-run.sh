@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/env bash
 
 export GO111MODULE=on
 export GOPATH="`cd ~/go;pwd`"
