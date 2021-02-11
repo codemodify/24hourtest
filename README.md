@@ -8,7 +8,9 @@ export GOPATH="`cd ~/go;pwd`"
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-go get github.com/codemodify/24hourtest
+mkdir -p $GOPATH/src/github.com/codemodify
+cd $GOPATH/src/github.com/codemodify
+git clone https://github.com/codemodify/24hourtest.git
 ```
 
 # 2 - run Docker image
